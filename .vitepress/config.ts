@@ -5,9 +5,9 @@ export default defineConfig({
   title: 'Cy-Design',
   description: 'A Vue3+TS UI Library',
   base: '/cy-design-docs/',
-  outDir: '../public',
+  outDir: './docs',
   head: [
-    ['link', { ref: 'png', href: '/cy-design-docs/logo.png' }],
+    ['link', { rel: 'icon', href: '/cy-design-docs/favicon.ico' }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -46,5 +46,13 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/1Chen1y1111/cy-design' },
     ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2024-present 1Chen1y1111',
+    },
+  },
+  markdown: {
+    lineNumbers: true,
   },
 })
